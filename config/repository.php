@@ -232,7 +232,7 @@ return [
         'paths'         => [
             'models'       => 'Entities',
             'repositories' => 'Repositories',
-            'interfaces'   => 'Repositories',
+            'interfaces'   => 'Repositories/Contracts',
             'transformers' => 'Transformers',
             'presenters'   => 'Presenters',
             'validators'   => 'Validators',

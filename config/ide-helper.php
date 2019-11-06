@@ -25,7 +25,7 @@ return array(
     |
     */
 
-    'include_fluent' => false,
+    'include_fluent' => true,
 
     /*
     |--------------------------------------------------------------------------
@@ -63,10 +63,12 @@ return array(
     |
     */
 
-    'include_helpers' => false,
+    'include_helpers' => true,
 
     'helper_files' => array(
         base_path().'/vendor/laravel/framework/src/Illuminate/Support/helpers.php',
+        base_path().'/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php',
+        app_path().'/Supports/helpers.php',
     ),
 
     /*
@@ -80,7 +82,7 @@ return array(
     */
 
     'model_locations' => array(
-        'app',
+        'app/Entities',
     ),
 
 
@@ -192,6 +194,6 @@ return array(
     | magic methods and properties.
     |
     */
-    'include_class_docblocks' => false,
+    'include_class_docblocks' => true,
 
 );
